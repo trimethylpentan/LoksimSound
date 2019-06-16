@@ -123,6 +123,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ComplexLoopSound.cpp" />
+    <ClCompile Include="SimpleLoopSound.cpp" />
+    <ClCompile Include="SimpleSound.cpp" />
+    <ClCompile Include="Sound.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComplexLoopSound.h" />
+    <ClInclude Include="SimpleLoopSound.h" />
+    <ClInclude Include="SimpleSound.h" />
+    <ClInclude Include="Sound.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
