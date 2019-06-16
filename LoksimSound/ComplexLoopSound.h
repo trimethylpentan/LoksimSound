@@ -5,7 +5,8 @@
 // Spielt einen Sound ab, der aus mehreren Dateien besteht und loopt den Mittelteil
 class ComplexLoopSound : Sound
 {
+public:
 	// Inherited via Sound
-	virtual void playSound(string soundFilename) override;
+	void playSound(string soundFilename);
 };
 

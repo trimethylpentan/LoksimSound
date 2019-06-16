@@ -6,6 +6,6 @@
 class SimpleLoopSound : Sound
 {
 	// Inherited via Sound
-	virtual void playSound(string soundFilename) override;
+	void playSound(string soundFilename);
 };
 
