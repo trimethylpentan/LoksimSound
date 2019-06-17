@@ -6,12 +6,17 @@
 
 void ComplexLoopSound::playSound(string soundFilename)
 {
-	std::cout << "test"; 
 	SoLoud::Soloud soloud;
 	soloud.init();
+	string backend = soloud.getBackendString();
+	cout << backend;
 
 	SoLoud::Wav wav;
-	wav.load(soundFilename.c_str());
+	SoLoud::result isLoaded = wav.load(soundFilename.c_str());
 
-	soloud.play(wav);
+	if (isLoaded == SoLoud::SO_NO_ERROR) {
+		soloud.play(wav);
+	}
+
+	soloud.deinit();
 }
