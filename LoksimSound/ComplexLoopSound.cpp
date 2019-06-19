@@ -2,21 +2,22 @@
 
 #include "soloud.h";
 #include "soloud_wav.h";
+#include "soloud_thread.h";
 #include <iostream>
 
-void ComplexLoopSound::playSound(string soundFilename)
+void LoksimSound::ComplexLoopSound::playSound(string soundFilename)
 {
-	SoLoud::Soloud soloud;
-	soloud.init();
-	string backend = soloud.getBackendString();
+	string backend = soloud_.getBackendString();
 	cout << backend;
 
 	SoLoud::Wav wav;
 	SoLoud::result isLoaded = wav.load(soundFilename.c_str());
 
 	if (isLoaded == SoLoud::SO_NO_ERROR) {
-		soloud.play(wav);
-	}
+		int handle = soloud_.play(wav);
 
-	soloud.deinit();
+		double timeInSeconds = wav.getLength();
+		SoLoud::Thread::sleep(timeInSeconds * 1000);
+		soloud_.stop(handle);
+	}
 }

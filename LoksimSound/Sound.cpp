@@ -1,3 +1,14 @@
 #include "Sound.h"
 
-// generelle Methoden für alle Sounds
+SoLoud::Soloud LoksimSound::Sound::soloud_;
+
+// initialisiert SoLoud
+void LoksimSound::Sound::initialise()
+{
+	soloud_.init();
+}
+
+void LoksimSound::Sound::deinitialise()
+{
+	soloud_.deinit();
+}

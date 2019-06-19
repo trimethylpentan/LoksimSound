@@ -1,5 +1,5 @@
 #include "SimpleLoopSound.h"
 
-void SimpleLoopSound::playSound(string soundFilename)
+void LoksimSound::SimpleLoopSound::playSound(string soundFilename)
 {
 }
