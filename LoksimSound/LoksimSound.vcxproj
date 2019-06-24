@@ -132,7 +132,7 @@
     <ClCompile Include="SimpleLoopSound.cpp" />
     <ClCompile Include="SimpleSound.cpp" />
     <ClCompile Include="Sound.cpp" />
-    <ClCompile Include="SoundPaths.cpp" />
+    <ClCompile Include="Sounds.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ComplexLoopSound.h" />
@@ -140,7 +140,7 @@
     <ClInclude Include="SimpleLoopSound.h" />
     <ClInclude Include="SimpleSound.h" />
     <ClInclude Include="Sound.h" />
-    <ClInclude Include="SoundPaths.h" />
+    <ClInclude Include="Sounds.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LoksimSound.rc" />

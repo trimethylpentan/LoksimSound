@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Sound.h"
+#include "soloud_wav.h"
 
 namespace LoksimSound
 {
@@ -8,7 +9,11 @@ namespace LoksimSound
 	class SimpleSound : Sound
 	{
 	    public:
+			SimpleSound(string soundFilename);
 			// Inherited via Sound
-			void playSound(string soundFilename);
+			void playSound();
+
+		private:
+			SoLoud::Wav sound_;
 	};
 }

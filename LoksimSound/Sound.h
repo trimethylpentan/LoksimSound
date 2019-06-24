@@ -13,7 +13,7 @@ namespace LoksimSound
 		public:
 			static void initialise();
 		    static void deinitialise();
-			virtual void playSound(string soundFilename) = 0;
+			virtual void playSound() = 0;
 
 		protected:
 			static SoLoud::Soloud soloud_;
