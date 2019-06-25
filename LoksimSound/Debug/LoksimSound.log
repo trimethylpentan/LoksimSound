@@ -1,5 +1,5 @@
-﻿  SimpleSound.cpp
+﻿  ComplexLoopSound.cpp
+  SimpleSound.cpp
   Sounds.cpp
   Generating Code...
-C:\Users\Anwender\Documents\Projects\loksim-core\Loksim\LoksimSound\LoksimSound\SimpleSound.cpp(17,38): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
   LoksimSound.vcxproj -> C:\Users\Anwender\Documents\Projects\loksim-core\Loksim\Debug\LoksimSound.lib

@@ -4,21 +4,25 @@
 #define SOUNDS_H
 
 #include "Sound.h"
-#include "SimpleSound.h"
 
 namespace LoksimSound
 {
+
+class Sound;
+
 class Sounds
 {
     public:
-		LoksimSound::SimpleSound *sndPfeiffe;
-		LoksimSound::SimpleSound *sndSchleudern;
-		LoksimSound::SimpleSound *sndStand;
-		LoksimSound::SimpleSound *sndSanden;
-		LoksimSound::SimpleSound *ndWeiche;
-		LoksimSound::SimpleSound *sndSchienenstoss;
-		LoksimSound::SimpleSound *sndKurvenf;
-		LoksimSound::SimpleSound *sndBremseRad;
+		LoksimSound::Sound *sndPfeiffe;
+		LoksimSound::Sound* sndSchleudern;
+		LoksimSound::Sound* sndStand;
+		LoksimSound::Sound* sndSanden;
+		LoksimSound::Sound* sndWeiche;
+		LoksimSound::Sound* sndSchienenstoss;
+		LoksimSound::Sound* sndKurvenf;
+		LoksimSound::Sound* sndBremseRad;
+
+		void clearAll();
 };
 }
 

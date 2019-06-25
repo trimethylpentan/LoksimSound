@@ -5,9 +5,9 @@
 namespace LoksimSound
 {
 	// Loopt eine einzelne Sounddatei
-	class SimpleLoopSound : Sound
+	class SimpleLoopSound : public Sound
 	{
 		// Inherited via Sound
-		void playSound(string soundFilename);
+		void playSound() override;
 	};
 }

@@ -1,12 +1,15 @@
 #pragma once
 
+#ifndef SIMPLE_SOUND_H
+#define SIMPLE_SOUND_H
+
 #include "Sound.h"
 #include "soloud_wav.h"
 
 namespace LoksimSound
 {
 	// Spielt einen einfachen Sound ein Mal ab
-	class SimpleSound : Sound
+	class SimpleSound : public Sound
 	{
 	    public:
 			SimpleSound(string soundFilename);
@@ -16,4 +19,5 @@ namespace LoksimSound
 		private:
 			SoLoud::Wav sound_;
 	};
-}
+} // namespace LoksimSound
+#endif    // !SIMPLE_SOUND_H
