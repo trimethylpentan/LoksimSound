@@ -3,3 +3,7 @@
 void LoksimSound::SimpleLoopSound::playSound()
 {
 }
+
+void LoksimSound::SimpleLoopSound::stopSound()
+{
+}

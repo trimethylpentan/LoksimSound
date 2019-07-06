@@ -13,3 +13,7 @@ void LoksimSound::SimpleSound::playSound()
 {
 	soloud_.play(sound_);
 }
+
+void LoksimSound::SimpleSound::stopSound()
+{
+}

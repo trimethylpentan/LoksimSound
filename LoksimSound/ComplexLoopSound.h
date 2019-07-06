@@ -13,11 +13,16 @@ namespace LoksimSound
 			ComplexLoopSound(string soundFilename);
 			// Inherited via Sound
 			void playSound() override;
+			void stopSound() override;
 
 		private:
 			SoLoud::Wav startSound_;
 		    SoLoud::Wav middleLoopSound_;
 			SoLoud::Wav endSound_;
+
+			bool startHasPlayed_ = false;
+			int middleLoopSoundHandle_ = 0;
+			int startSoundHandle_ = 0;
 	};
 }
 

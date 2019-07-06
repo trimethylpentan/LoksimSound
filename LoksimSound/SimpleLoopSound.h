@@ -9,5 +9,6 @@ namespace LoksimSound
 	{
 		// Inherited via Sound
 		void playSound() override;
+		void stopSound() override;
 	};
 }

@@ -15,6 +15,7 @@ namespace LoksimSound
 			SimpleSound(string soundFilename);
 			// Inherited via Sound
 			void playSound();
+			void stopSound();
 
 		private:
 			SoLoud::Wav sound_;

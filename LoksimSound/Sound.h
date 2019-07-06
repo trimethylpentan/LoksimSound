@@ -20,6 +20,7 @@ namespace LoksimSound
 			static void initialise();
 		    static void deinitialise(LoksimSound::Sounds sounds);
 			virtual void playSound() = 0;
+		    virtual void stopSound() = 0;
 
 		protected:
 			static SoLoud::Soloud soloud_;
