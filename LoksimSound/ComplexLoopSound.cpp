@@ -5,6 +5,8 @@
 #include "soloud_wav.h"
 #include <iostream>
 
+using namespace std;
+
 LoksimSound::ComplexLoopSound::ComplexLoopSound(string soundFilename)
 {
 	string startSoundFilename = soundFilename + "_1.wav";

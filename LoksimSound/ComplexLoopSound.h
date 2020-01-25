@@ -10,7 +10,7 @@ namespace LoksimSound
 	class ComplexLoopSound : public Sound
 	{
 		public:
-			ComplexLoopSound(string soundFilename);
+			ComplexLoopSound(std::string soundFilename);
 			// Inherited via Sound
 			void playSound() override;
 			void stopSound() override;

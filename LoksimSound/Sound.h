@@ -1,13 +1,8 @@
 #pragma once
 
-#ifndef SOUND_H
-#define SOUND_H
-
 #include <string>
 
 #include "soloud.h"
-
-using namespace std;
 
 namespace LoksimSound
 {
@@ -26,4 +21,3 @@ namespace LoksimSound
 			static SoLoud::Soloud soloud_;
 	};
 } // namespace LoksimSound
-#endif    // !SOUND_H

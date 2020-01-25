@@ -1,10 +1,5 @@
 #pragma once
 
-#ifndef SOUNDS_H
-#define SOUNDS_H
-
-#include "Sound.h"
-
 namespace LoksimSound
 {
 
@@ -25,5 +20,3 @@ class Sounds
 		void clearAll();
 };
 }
-
-#endif // !SOUNDS_H

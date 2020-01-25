@@ -2,6 +2,8 @@
 #include <soloud_wav.h>
 #include <soloud_thread.h>
 
+using namespace std;
+
 LoksimSound::SimpleSound::SimpleSound(string soundFilename)
 {
 	sound_.load(soundFilename.c_str());
